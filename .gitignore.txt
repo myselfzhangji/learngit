@@ -1,0 +1,7 @@
+# IAR:
+*.dep
+*.ewd
+*.ewp
+*.ewt
+settings
+Debug
