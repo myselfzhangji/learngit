@@ -1,0 +1,390 @@
+###############################################################################
+#
+# IAR ELF Linker V7.60.2.11341/W32 for ARM                06/Aug/2016  12:08:18
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Exe\NVIC.out
+#    Map file     =  
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\List\NVIC.map
+#    Command line =  
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Obj\common.o
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Obj\gpio.o
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Obj\main.o
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Obj\pit.o
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Obj\startup_MK60D10.o
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Obj\system_MK60D10.o
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Obj\uart.o
+#        -o
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Exe\NVIC.out
+#        --map
+#        G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\List\NVIC.map
+#        --config "D:\Program Files\IAR
+#        Systems\arm\config\linker\NXP\MK60xN512_10.icf" --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P2":  place in [from 0x00000000 to 0x000003ff] |
+                [from 0x00000410 to 0x0007ffff] { ro };
+"P3":  place in [from 0x1fff0000 to 0x1fffffff repeat 2] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x410
+  .intvec            ro code  0x00000000   0x410  startup_MK60D10.o [1]
+                            - 0x00000410   0x410
+
+"P2":                                     0x1658
+  .text              ro code  0x00000410   0x784  uart.o [1]
+  .text              ro code  0x00000b94    0xdc  common.o [1]
+  .text              ro code  0x00000c70   0x3d4  gpio.o [1]
+  .text              ro code  0x00001044   0x1dc  system_MK60D10.o [1]
+  .text              ro code  0x00001220   0x1b4  pit.o [1]
+  .text              ro code  0x000013d4   0x14e  xprintftiny.o [3]
+  .text              ro code  0x00001524    0x36  strlen.o [4]
+  .text              ro code  0x0000155c   0x12c  main.o [1]
+  .text              ro code  0x00001688    0x24  printf.o [3]
+  .text              ro code  0x000016ac    0x40  zero_init3.o [4]
+  .rodata            const    0x000016ec    0x30  uart.o [1]
+  .text              ro code  0x0000171c    0x2c  copy_init3.o [4]
+  .text              ro code  0x00001748    0x28  putchar.o [3]
+  .text              ro code  0x00001770    0x28  data_init.o [4]
+  .iar.init_table    const    0x00001798    0x24  - Linker created -
+  .rodata            const    0x000017bc    0x1c  uart.o [1]
+  .text              ro code  0x000017d8    0x1a  cmain.o [4]
+  .text              ro code  0x000017f2     0x4  low_level_init.o [3]
+  .text              ro code  0x000017f6     0x4  exit.o [3]
+  .text              ro code  0x000017fc     0xa  cexit.o [4]
+  .text              ro code  0x00001808    0x14  exit.o [5]
+  .rodata            const    0x0000181c    0x18  uart.o [1]
+  .text              ro code  0x00001834    0x16  xprout.o [3]
+  .rodata            const    0x0000184c    0x14  gpio.o [1]
+  .rodata            const    0x00001860    0x14  gpio.o [1]
+  .rodata            const    0x00001874    0x14  gpio.o [1]
+  .rodata            const    0x00001888    0x14  main.o [1]
+  .rodata            const    0x0000189c    0x10  main.o [1]
+  .text              ro code  0x000018ac    0x10  startup_MK60D10.o [1]
+  .rodata            const    0x000018bc     0xc  main.o [1]
+  .text              ro code  0x000018c8     0xc  cstartup_M.o [4]
+  .rodata            const    0x000018d4     0x4  pit.o [1]
+  .text              ro code  0x000018d8     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000018dc     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000018e0     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000018e4     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000018e8     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000018ec     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000018f0     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000018f4     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000018f8     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000018fc     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001900     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001904     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001908     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x0000190c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001910     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001914     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001918     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x0000191c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001920     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001924     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001928     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x0000192c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001930     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001934     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001938     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x0000193c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001940     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001944     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001948     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x0000194c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001950     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001954     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001958     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x0000195c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001960     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001964     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001968     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x0000196c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001970     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001974     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001978     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x0000197c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001980     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001984     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001988     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x0000198c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001990     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001994     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001998     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x0000199c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019a0     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019a4     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019a8     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019ac     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019b0     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019b4     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019b8     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019bc     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019c0     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019c4     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019c8     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019cc     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019d0     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019d4     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019d8     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019dc     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019e0     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019e4     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019e8     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019ec     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019f0     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019f4     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019f8     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x000019fc     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a00     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a04     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a08     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a0c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a10     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a14     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a18     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a1c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a20     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a24     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a28     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a2c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a30     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a34     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a38     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a3c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a40     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a44     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a48     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a4c     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a50     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a54     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a58     0x4  startup_MK60D10.o [1]
+  .text              ro code  0x00001a5c     0x4  startup_MK60D10.o [1]
+  .rodata            const    0x00001a60     0x0  zero_init3.o [4]
+  .rodata            const    0x00001a60     0x0  copy_init3.o [4]
+  Initializer bytes  const    0x00001a60     0x8  <for P3 s0>
+                            - 0x00001a68  0x1658
+
+"P3", part 1 of 3:                           0x8
+  P3 s0                       0x1fff0000     0x8  <Init block>
+    .data            inited   0x1fff0000     0x4  system_MK60D10.o [1]
+    .data            inited   0x1fff0004     0x1  uart.o [1]
+                            - 0x1fff0008     0x8
+
+"P3", part 2 of 3:                          0x5c
+  .bss               zero     0x1fff0008    0x18  uart.o [1]
+  .bss               zero     0x1fff0020    0x18  uart.o [1]
+  .bss               zero     0x1fff0038    0x14  gpio.o [1]
+  .bss               zero     0x1fff004c    0x10  pit.o [1]
+  .bss               zero     0x1fff005c     0x4  pit.o [1]
+  .bss               zero     0x1fff0060     0x1  uart.o [1]
+                            - 0x1fff0061    0x59
+
+"P3", part 3 of 3:                        0x2000
+  CSTACK                      0x1fff0068  0x2000  <Block>
+    CSTACK           uninit   0x1fff0068  0x2000  <Block tail>
+                            - 0x1fff2068  0x2000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x59:
+          0x1fff0008  0x59
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x8 (160% of destination):
+          0x00001a60   0x8
+    1 destination range, total size 0x5:
+          0x1fff0000   0x5
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  ro data  rw data
+    ------             -------  -------  -------
+G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Obj: [1]
+    common.o               220
+    gpio.o                 980       60       20
+    main.o                 300       48
+    pit.o                  436        4       20
+    startup_MK60D10.o    1 448
+    system_MK60D10.o       476        4        4
+    uart.o               1 924      101       50
+    --------------------------------------------
+    Total:               5 784      217       94
+
+command line: [2]
+    --------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                   4
+    low_level_init.o         4
+    printf.o                36
+    putchar.o               40
+    xprintftiny.o          334
+    xprout.o                22
+    --------------------------------------------
+    Total:                 440
+
+rt7M_tl.a: [4]
+    cexit.o                 10
+    cmain.o                 26
+    copy_init3.o            44
+    cstartup_M.o            12
+    data_init.o             40
+    strlen.o                54
+    zero_init3.o            64
+    --------------------------------------------
+    Total:                 250
+
+shb_l.a: [5]
+    exit.o                  20
+    --------------------------------------------
+    Total:                  20
+
+    Gaps                     8        2
+    Linker created                   39    8 192
+------------------------------------------------
+    Grand Total:         6 502      258    8 286
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x00001798          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x000017bc          --   Gb  - Linker created -
+?main                   0x000017d9         Code  Gb  cmain.o [4]
+CLOCK_GetClockFrequency
+                        0x00000b95   0x80  Code  Gb  common.o [1]
+CSTACK$$Base            0x1fff0068          --   Gb  - Linker created -
+CSTACK$$Limit           0x1fff2068          --   Gb  - Linker created -
+DWT_DelayMs             0x00000c59    0xe  Code  Gb  common.o [1]
+DWT_DelayUs             0x00000c15   0x32  Code  Gb  common.o [1]
+DelayMs                 0x00000c67    0x8  Code  Wk  common.o [1]
+GPIO_CallBackTable      0x1fff0038   0x14  Data  Lc  gpio.o [1]
+GPIO_Init               0x00000e71   0xe4  Code  Gb  gpio.o [1]
+GPIO_InstanceTable      0x0000184c   0x14  Data  Lc  gpio.o [1]
+GPIO_PinConfig          0x00000e13   0x5e  Code  Gb  gpio.o [1]
+GPIO_QuickInit          0x00000f55   0x1c  Code  Gb  gpio.o [1]
+NMI_Handler             0x00000c6f    0x2  Code  Gb  common.o [1]
+NVIC_EnableIRQ          0x00001221   0x14  Code  Lc  pit.o [1]
+NVIC_EncodePriority     0x0000157f   0x3e  Code  Lc  main.o [1]
+NVIC_SetPriority        0x0000155d   0x22  Code  Lc  main.o [1]
+PIT0_IRQHandler         0x0000132b   0x1e  Code  Gb  pit.o [1]
+PIT0_ISR                0x000015bd   0x18  Code  Lc  main.o [1]
+PIT1_IRQHandler         0x00001349   0x1e  Code  Gb  pit.o [1]
+PIT1_ISR                0x000015d5    0xa  Code  Lc  main.o [1]
+PIT2_IRQHandler         0x00001367   0x1e  Code  Gb  pit.o [1]
+PIT3_IRQHandler         0x00001385   0x1e  Code  Gb  pit.o [1]
+PIT_CallBackTable       0x1fff004c   0x10  Data  Lc  pit.o [1]
+PIT_CallbackInstall     0x0000130f   0x1c  Code  Gb  pit.o [1]
+PIT_IRQnTable           0x000018d4    0x4  Data  Lc  pit.o [1]
+PIT_ITDMAConfig         0x00001293   0x7c  Code  Gb  pit.o [1]
+PIT_Init                0x00001235   0x5e  Code  Gb  pit.o [1]
+PORTA_IRQHandler        0x00000f71   0x26  Code  Gb  gpio.o [1]
+PORTB_IRQHandler        0x00000f97   0x26  Code  Gb  gpio.o [1]
+PORTC_IRQHandler        0x00000fbd   0x26  Code  Gb  gpio.o [1]
+PORTD_IRQHandler        0x00000fe3   0x26  Code  Gb  gpio.o [1]
+PORTE_IRQHandler        0x00001009   0x26  Code  Gb  gpio.o [1]
+PORT_InstanceTable      0x00001860   0x14  Data  Lc  gpio.o [1]
+PORT_PinMuxConfig       0x00000c71   0x64  Code  Gb  gpio.o [1]
+PORT_PinOpenDrainConfig
+                        0x00000dad   0x66  Code  Gb  gpio.o [1]
+PORT_PinPullConfig      0x00000cd5   0xd8  Code  Gb  gpio.o [1]
+Region$$Table$$Base     0x00001798          --   Gb  - Linker created -
+Region$$Table$$Limit    0x000017bc          --   Gb  - Linker created -
+SIM_GPIOClockGateTable  0x00001874   0x14  Data  Lc  gpio.o [1]
+SIM_UARTClockGateTable  0x000016ec   0x30  Data  Lc  uart.o [1]
+SystemCoreClock         0x1fff0000    0x4  Data  Gb  system_MK60D10.o [1]
+SystemCoreClockUpdate   0x000010a3  0x140  Code  Gb  system_MK60D10.o [1]
+SystemInit              0x00001045   0x5e  Code  Gb  system_MK60D10.o [1]
+UART0_RX_TX_IRQHandler  0x0000092b   0x62  Code  Gb  uart.o [1]
+UART1_RX_TX_IRQHandler  0x0000098d   0x62  Code  Gb  uart.o [1]
+UART2_RX_TX_IRQHandler  0x000009ef   0x62  Code  Gb  uart.o [1]
+UART3_RX_TX_IRQHandler  0x00000a51   0x62  Code  Gb  uart.o [1]
+UART4_RX_TX_IRQHandler  0x00000ab3   0x62  Code  Gb  uart.o [1]
+UART5_RX_TX_IRQHandler  0x00000b15   0x62  Code  Gb  uart.o [1]
+UART_CallBackRxTable    0x1fff0020   0x18  Data  Lc  uart.o [1]
+UART_CallBackTxTable    0x1fff0008   0x18  Data  Lc  uart.o [1]
+UART_DebugInstance      0x1fff0060    0x1  Data  Lc  uart.o [1]
+UART_EnableRxFIFO       0x000007ad   0x3e  Code  Gb  uart.o [1]
+UART_EnableTxFIFO       0x0000076f   0x3e  Code  Gb  uart.o [1]
+UART_GetTxFIFOSize      0x000007eb   0x1a  Code  Gb  uart.o [1]
+UART_Init               0x0000044d  0x322  Code  Gb  uart.o [1]
+UART_Init::is_fitst_init
+                        0x1fff0004    0x1  Data  Lc  uart.o [1]
+UART_InstanceTable      0x0000181c   0x18  Data  Lc  uart.o [1]
+UART_QuickInit          0x0000088f   0x9c  Code  Gb  uart.o [1]
+UART_TIFOSizeTable      0x000017bc   0x1c  Data  Lc  uart.o [1]
+UART_WriteByte          0x00000805   0x8a  Code  Gb  uart.o [1]
+_PrintfTiny             0x000013ed  0x136  Code  Gb  xprintftiny.o [3]
+_Prout                  0x00001835   0x16  Code  Gb  xprout.o [3]
+__Vectors               0x00000000          --   Gb  startup_MK60D10.o [1]
+__Vectors_End           0x00000400         Data  Gb  startup_MK60D10.o [1]
+__Vectors_Size {Abs}    0x00000400          --   Gb  startup_MK60D10.o [1]
+__cmain                 0x000017d9         Code  Gb  cmain.o [4]
+__exit                  0x00001809   0x14  Code  Gb  exit.o [5]
+__iar_copy_init3        0x0000171d   0x2c  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x00001771   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x000018c9         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x000016ad   0x40  Code  Gb  zero_init3.o [4]
+__low_level_init        0x000017f3    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000         Data  Gb  startup_MK60D10.o [1]
+__write                 0x00000411   0x3c  Code  Wk  uart.o [1]
+_call_main              0x000017e5         Code  Gb  cmain.o [4]
+_exit                   0x000017fd         Code  Gb  cexit.o [4]
+_main                   0x000017ef         Code  Gb  cmain.o [4]
+exit                    0x000017f7    0x4  Code  Gb  exit.o [3]
+fac_us                  0x1fff005c    0x4  Data  Lc  pit.o [1]
+main                    0x000015df   0x84  Code  Gb  main.o [1]
+out                     0x000013d5   0x18  Code  Lc  xprintftiny.o [3]
+printf                  0x00001689   0x24  Code  Gb  printf.o [3]
+putchar                 0x00001749   0x28  Code  Gb  putchar.o [3]
+strlen                  0x00001525         Code  Gb  strlen.o [4]
+
+
+[1] = G:\电子工程学习\ARMstudy\freescale\K60_example\project\NVIC\IAR\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  6 502 bytes of readonly  code memory
+    258 bytes of readonly  data memory
+  8 286 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

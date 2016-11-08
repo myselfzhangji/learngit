@@ -1,0 +1,259 @@
+###############################################################################
+#
+# IAR ELF Linker V7.60.2.11341/W32 for ARM                16/Jul/2016  09:27:01
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\Administrator\Desktop\Demo1\project\Port_Led&Buzzer\IAR\Debug\Exe\LED-Buzzer.out
+#    Map file     =  
+#        C:\Users\Administrator\Desktop\Demo1\project\Port_Led&Buzzer\IAR\Debug\List\LED-Buzzer.map
+#    Command line =  
+#        C:\Users\Administrator\Desktop\Demo1\project\Port_Led&Buzzer\IAR\Debug\Obj\main.o
+#        C:\Users\Administrator\Desktop\Demo1\project\Port_Led&Buzzer\IAR\Debug\Obj\startup_MK60D10.o
+#        C:\Users\Administrator\Desktop\Demo1\project\Port_Led&Buzzer\IAR\Debug\Obj\system_MK60D10.o
+#        -o
+#        C:\Users\Administrator\Desktop\Demo1\project\Port_Led&Buzzer\IAR\Debug\Exe\LED-Buzzer.out
+#        --map
+#        C:\Users\Administrator\Desktop\Demo1\project\Port_Led&Buzzer\IAR\Debug\List\LED-Buzzer.map
+#        --config "D:\Program Files\IAR
+#        Systems\arm\config\linker\NXP\MK60xN512_10.icf" --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P2":  place in [from 0x00000000 to 0x000003ff] |
+                [from 0x00000410 to 0x0007ffff] { ro };
+"P3":  place in [from 0x1fff0000 to 0x1fffffff repeat 2] {
+          rw, block CSTACK, block HEAP };
+
+  Section   Kind        Address    Size  Object
+  -------   ----        -------    ----  ------
+"A1":                             0x410
+  .intvec   ro code  0x00000000   0x410  startup_MK60D10.o [1]
+                   - 0x00000410   0x410
+
+"P2":                             0x34c
+  .text     ro code  0x00000410    0x9c  main.o [1]
+  .text     ro code  0x000004ac    0x88  system_MK60D10.o [1]
+  .text     ro code  0x00000534    0x1a  cmain.o [4]
+  .text     ro code  0x0000054e     0x4  low_level_init.o [3]
+  .text     ro code  0x00000552     0x4  exit.o [3]
+  .text     ro code  0x00000558     0xa  cexit.o [4]
+  .text     ro code  0x00000564    0x14  exit.o [5]
+  .text     ro code  0x00000578    0x10  startup_MK60D10.o [1]
+  .text     ro code  0x00000588     0xc  cstartup_M.o [4]
+  .text     ro code  0x00000594     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000598     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000059c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005a0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005a4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005a8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005ac     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005b0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005b4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005b8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005bc     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005c0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005c4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005c8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005cc     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005d0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005d4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005d8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005dc     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005e0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005e4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005e8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005ec     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005f0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005f4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005f8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000005fc     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000600     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000604     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000608     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000060c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000610     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000614     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000618     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000061c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000620     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000624     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000628     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000062c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000630     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000634     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000638     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000063c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000640     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000644     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000648     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000064c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000650     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000654     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000658     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000065c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000660     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000664     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000668     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000066c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000670     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000674     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000678     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000067c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000680     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000684     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000688     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000068c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000690     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000694     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000698     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000069c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006a0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006a4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006a8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006ac     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006b0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006b4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006b8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006bc     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006c0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006c4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006c8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006cc     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006d0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006d4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006d8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006dc     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006e0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006e4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006e8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006ec     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006f0     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006f4     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006f8     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x000006fc     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000700     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000704     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000708     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000070c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000710     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000714     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000718     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000071c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000720     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000724     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000728     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000072c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000730     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000734     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000738     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000073c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000740     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000744     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000748     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x0000074c     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000750     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000754     0x4  startup_MK60D10.o [1]
+  .text     ro code  0x00000758     0x4  startup_MK60D10.o [1]
+                   - 0x0000075c   0x34c
+
+"P3":                            0x2000
+  CSTACK             0x1fff0000  0x2000  <Block>
+    CSTACK  uninit   0x1fff0000  0x2000  <Block tail>
+                   - 0x1fff2000  0x2000
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  rw data
+    ------             -------  -------
+C:\Users\Administrator\Desktop\Demo1\project\Port_Led&Buzzer\IAR\Debug\Obj: [1]
+    main.o                 156
+    startup_MK60D10.o    1 512
+    system_MK60D10.o       136
+    -----------------------------------
+    Total:               1 804
+
+command line: [2]
+    -----------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                   4
+    low_level_init.o         4
+    -----------------------------------
+    Total:                   8
+
+rt7M_tl.a: [4]
+    cexit.o                 10
+    cmain.o                 26
+    cstartup_M.o            12
+    -----------------------------------
+    Total:                  48
+
+shb_l.a: [5]
+    exit.o                  20
+    -----------------------------------
+    Total:                  20
+
+    Gaps                     4
+    Linker created                8 192
+---------------------------------------
+    Grand Total:         1 884    8 192
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                    Address  Size  Type      Object
+-----                    -------  ----  ----      ------
+?main                 0x00000535        Code  Gb  cmain.o [4]
+CSTACK$$Base          0x1fff0000         --   Gb  - Linker created -
+CSTACK$$Limit         0x1fff2000         --   Gb  - Linker created -
+Region$$Table$$Base   0x00000000         --   Gb  - Linker created -
+Region$$Table$$Limit  0x00000000         --   Gb  - Linker created -
+SystemInit            0x000004ad  0x5e  Code  Gb  system_MK60D10.o [1]
+__Vectors             0x00000000         --   Gb  startup_MK60D10.o [1]
+__Vectors_End         0x00000400        Data  Gb  startup_MK60D10.o [1]
+__Vectors_Size {Abs}  0x00000400         --   Gb  startup_MK60D10.o [1]
+__cmain               0x00000535        Code  Gb  cmain.o [4]
+__exit                0x00000565  0x14  Code  Gb  exit.o [5]
+__iar_program_start   0x00000589        Code  Gb  cstartup_M.o [4]
+__low_level_init      0x0000054f   0x4  Code  Gb  low_level_init.o [3]
+__vector_table        0x00000000        Data  Gb  startup_MK60D10.o [1]
+_call_main            0x00000541        Code  Gb  cmain.o [4]
+_exit                 0x00000559        Code  Gb  cexit.o [4]
+_main                 0x0000054b        Code  Gb  cmain.o [4]
+exit                  0x00000553   0x4  Code  Gb  exit.o [3]
+main                  0x00000411  0x9c  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\Administrator\Desktop\Demo1\project\Port_Led&Buzzer\IAR\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  1 884 bytes of readonly  code memory
+  8 192 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

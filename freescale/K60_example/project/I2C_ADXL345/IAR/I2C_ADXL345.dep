@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1087480031</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Debug\Obj\system_MK60D10.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2C_ADXL345.pbd</file>
+      <file>$PROJ_DIR$\..\..\..\library\startup\devicesupport\system_MK60D10.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_MK60D10.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\I2C_ADXL345.out</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\device\inc\adxl345.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\driver\inc\i2c.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\driver\inc\common.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\driver\inc\gpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\driver\inc\SysTick.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\startup\coresupport\core_cmSimd.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\startup\devicesupport\MK60D10.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\driver\src\systick.c</file>
+      <file>$PROJ_DIR$\..\..\..\library\startup\devicesupport\IAR_ARM\startup_MK60D10.s</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\startup\devicesupport\system_MK60D10.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\driver\src\common.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup_MK60D10.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
+      <file>$PROJ_DIR$\..\..\..\library\driver\src\gpio.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\gpio.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
+      <file>$PROJ_DIR$\..\..\..\library\startup\coresupport\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\systick.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\driver\src\i2c.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.pbi</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\..\..\..\library\device\src\adxl345.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\adxl345.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adxl345.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\startup\coresupport\core_cm4.h</file>
+      <file>$PROJ_DIR$\..\..\..\library\startup\coresupport\core_cmInstr.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\adxl345.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\systick.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\gpio.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_MK60D10.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\config\linker\NXP\MK60xN512_10.icf</file>
+      <file>$PROJ_DIR$\Debug\List\I2C_ADXL345.map</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 4 65</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\library\startup\devicesupport\system_MK60D10.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 0</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 19 26 46 20 5 23 24 34 15 18 22 51 52 14 13</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 19 18 21 5 26 20 22 15 51 52 46 13 34 14 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\I2C_ADXL345.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 64 47 32 28 40 41 27 0 33 66 62 63 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\library\driver\src\systick.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 19 13 8 24 26 14 20 5 15 18 51 52 10 9 22 37 23 34 12 46</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12 24 19 18 21 5 26 20 22 9 10 8 37 15 51 52 46 13 34 14 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\library\startup\devicesupport\IAR_ARM\startup_MK60D10.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\library\driver\src\common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 19 52 8 37 18 13 26 51 24 15 20 5 14 38 9 22 23 34 10 46 36</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 10 24 19 18 21 5 26 20 22 9 8 37 15 51 52 46 13 34 14 23 38 36</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\library\driver\src\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 24 8 19 15 22 23 13 10 9 21 20 5 26 37 51 34 11 52 14 46</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11 10 24 19 18 21 5 26 20 22 9 8 37 15 51 52 46 13 34 14 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\library\driver\src\i2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 21 24 26 15 23 20 5 8 18 13 11 22 10 9 37 51 34 7 52 14 46</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7 24 19 18 21 5 26 20 22 11 10 9 8 37 15 51 52 46 13 34 14 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51 46 9 18 19 10 7 52 11 6 23 14 22 24 37 15 34 21 20 5 26 13 8</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 51 24 19 18 21 5 26 20 22 52 46 13 34 14 23 11 10 9 8 37 7 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\library\device\src\adxl345.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 18 50 24 22 53 6 21 20 5 26 49 7</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7 24 19 18 21 5 26 20 22 6 50 49 53</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

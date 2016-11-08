@@ -1,0 +1,271 @@
+###############################################################################
+#
+# IAR ELF Linker V7.60.2.11341/W32 for ARM                21/Aug/2016  09:38:25
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Exe\GPIO.out
+#    Map file     =  
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\List\GPIO.map
+#    Command line =  
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Obj\fsl_clock.o
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Obj\fsl_common.o
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Obj\fsl_debug_console.o
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Obj\fsl_gpio.o
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Obj\main.o
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Obj\startup_MK60D10.o
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Obj\system_MK60D10.o
+#        -o
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Exe\GPIO.out
+#        --map
+#        G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\List\GPIO.map
+#        --config "D:\Program Files\IAR
+#        Systems\arm\config\linker\NXP\MK60xN512_10.icf" --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000400 to 0x0000040f] { section FlashConfig };
+"P2":  place in [from 0x00000000 to 0x000003ff] |
+                [from 0x00000410 to 0x0007ffff] { ro };
+"P3":  place in [from 0x1fff0000 to 0x1fffffff repeat 2] {
+          rw, block CSTACK, block HEAP };
+
+  Section          Kind        Address    Size  Object
+  -------          ----        -------    ----  ------
+"A1":                                    0x400
+  .intvec          ro code  0x00000000   0x400  startup_MK60D10.o [1]
+                          - 0x00000400   0x400
+
+"P1":                                     0x10
+  FlashConfig      ro code  0x00000400    0x10  startup_MK60D10.o [1]
+                          - 0x00000410    0x10
+
+"P2":                                    0x850
+  .text            ro code  0x00000410   0x384  fsl_debug_console.o [1]
+  .text            ro code  0x00000794    0x36  strlen.o [4]
+  .text            ro code  0x000007ca     0x2  startup_MK60D10.o [1]
+  .text            ro code  0x000007cc    0xc4  main.o [1]
+  .text            ro code  0x00000890    0x64  fsl_gpio.o [1]
+  .text            ro code  0x000008f4    0x18  fsl_common.o [1]
+  .rodata          const    0x0000090c    0x50  fsl_gpio.o [1]
+  .text            ro code  0x0000095c    0x40  zero_init3.o [4]
+  .rodata          const    0x0000099c    0x2c  fsl_common.o [1]
+  .text            ro code  0x000009c8    0x28  data_init.o [4]
+  .text            ro code  0x000009f0    0x24  startup_MK60D10.o [1]
+  .text            ro code  0x00000a14    0x24  system_MK60D10.o [1]
+  .iar.init_table  const    0x00000a38    0x10  - Linker created -
+  .text            ro code  0x00000a48    0x1a  cmain.o [4]
+  .text            ro code  0x00000a62     0x4  low_level_init.o [3]
+  .text            ro code  0x00000a66     0x4  exit.o [3]
+  .text            ro code  0x00000a6a     0x2  startup_MK60D10.o [1]
+  .text            ro code  0x00000a6c     0xa  cexit.o [4]
+  .text            ro code  0x00000a76     0x2  startup_MK60D10.o [1]
+  .text            ro code  0x00000a78    0x14  exit.o [5]
+  .text            ro code  0x00000a8c     0xc  cstartup_M.o [4]
+  .rodata          const    0x00000a98     0x8  fsl_gpio.o [1]
+  .text            ro code  0x00000aa0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000aa8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000ab0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000ab8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000ac0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000ac8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000ad0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000ad8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000ae0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000ae8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000af0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000af8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b00     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b08     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b10     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b18     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b20     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b28     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b30     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b38     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b40     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b48     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b50     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b58     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b60     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b68     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b70     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b78     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b80     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b88     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b90     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000b98     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000ba0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000ba8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000bb0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000bb8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000bc0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000bc8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000bd0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000bd8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000be0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000be8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000bf0     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000bf8     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c00     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c08     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c10     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c18     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c20     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c28     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c30     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c38     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c40     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c48     0x8  startup_MK60D10.o [1]
+  .text            ro code  0x00000c50     0x4  startup_MK60D10.o [1]
+  .text            ro code  0x00000c54     0x2  startup_MK60D10.o [1]
+  .text            ro code  0x00000c56     0x2  startup_MK60D10.o [1]
+  .text            ro code  0x00000c58     0x2  startup_MK60D10.o [1]
+  .text            ro code  0x00000c5a     0x2  startup_MK60D10.o [1]
+  .text            ro code  0x00000c5c     0x2  startup_MK60D10.o [1]
+  .text            ro code  0x00000c5e     0x2  startup_MK60D10.o [1]
+  .rodata          const    0x00000c60     0x0  zero_init3.o [4]
+                          - 0x00000c60   0x850
+
+"P3", part 1 of 2:                        0x10
+  .bss             zero     0x1fff0000    0x10  fsl_debug_console.o [1]
+                          - 0x1fff0010    0x10
+
+"P3", part 2 of 2:                      0x2000
+  CSTACK                    0x1fff0010  0x2000  <Block>
+    CSTACK         uninit   0x1fff0010  0x2000  <Block tail>
+                          - 0x1fff2010  0x2000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x10:
+          0x1fff0000  0x10
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Obj: [1]
+    fsl_common.o              24       44
+    fsl_debug_console.o      900                16
+    fsl_gpio.o               100       88
+    main.o                   196
+    startup_MK60D10.o      1 530
+    system_MK60D10.o          36
+    ----------------------------------------------
+    Total:                 2 786      132       16
+
+command line: [2]
+    ----------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                     4
+    low_level_init.o           4
+    ----------------------------------------------
+    Total:                     8
+
+rt7M_tl.a: [4]
+    cexit.o                   10
+    cmain.o                   26
+    cstartup_M.o              12
+    data_init.o               40
+    strlen.o                  54
+    zero_init3.o              64
+    ----------------------------------------------
+    Total:                   206
+
+shb_l.a: [5]
+    exit.o                    20
+    ----------------------------------------------
+    Total:                    20
+
+    Linker created                     16    8 192
+--------------------------------------------------
+    Grand Total:           3 020      148    8 208
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x00000a38          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00000a48          --   Gb  - Linker created -
+?main                   0x00000a49         Code  Gb  cmain.o [4]
+CLOCK_EnableClock       0x000007cd   0x18  Code  Lc  main.o [1]
+CSTACK$$Base            0x1fff0010          --   Gb  - Linker created -
+CSTACK$$Limit           0x1fff2010          --   Gb  - Linker created -
+DbgConsole_ConvertRadixNumToString
+                        0x00000485   0x82  Code  Lc  fsl_debug_console.o [1]
+DbgConsole_Printf       0x00000411   0x24  Code  Gb  fsl_debug_console.o [1]
+DbgConsole_PrintfFormattedData
+                        0x00000507  0x288  Code  Lc  fsl_debug_console.o [1]
+DbgConsole_PrintfPaddingCharacter
+                        0x0000045d   0x28  Code  Lc  fsl_debug_console.o [1]
+DbgConsole_Putchar      0x00000435   0x28  Code  Gb  fsl_debug_console.o [1]
+GPIO_PinInit            0x000008ab   0x42  Code  Gb  fsl_gpio.o [1]
+GPIO_WritePinOutput     0x00000891   0x1a  Code  Lc  fsl_gpio.o [1]
+PORT_SetPinMux          0x000007e5   0x18  Code  Lc  main.o [1]
+Region$$Table$$Base     0x00000a38          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00000a48          --   Gb  - Linker created -
+SystemInit              0x00000a15   0x1a  Code  Gb  system_MK60D10.o [1]
+__Vectors               0x00000000          --   Gb  startup_MK60D10.o [1]
+__Vectors_End           0x00000400         Data  Gb  startup_MK60D10.o [1]
+__Vectors_Size {Abs}    0x00000400          --   Gb  startup_MK60D10.o [1]
+__aeabi_assert          0x000008f5   0x12  Code  Gb  fsl_common.o [1]
+__cmain                 0x00000a49         Code  Gb  cmain.o [4]
+__exit                  0x00000a79   0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x000009c9   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x00000a8d         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x0000095d   0x40  Code  Gb  zero_init3.o [4]
+__low_level_init        0x00000a63    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000         Data  Gb  startup_MK60D10.o [1]
+__vector_table_0x1c     0x0000001c         Data  Gb  startup_MK60D10.o [1]
+_call_main              0x00000a55         Code  Gb  cmain.o [4]
+_exit                   0x00000a6d         Code  Gb  cexit.o [4]
+_main                   0x00000a5f         Code  Gb  cmain.o [4]
+delay                   0x000007fd    0xa  Code  Gb  main.o [1]
+exit                    0x00000a67    0x4  Code  Gb  exit.o [3]
+main                    0x00000807   0x6e  Code  Gb  main.o [1]
+s_debugConsole          0x1fff0000   0x10  Data  Lc  fsl_debug_console.o [1]
+strlen                  0x00000795         Code  Gb  strlen.o [4]
+
+
+[1] = G:\电子工程学习\ARMstudy\freescale\MK60D10_software\project\GPIO\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  3 020 bytes of readonly  code memory
+    148 bytes of readonly  data memory
+  8 208 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
